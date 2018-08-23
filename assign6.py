@@ -69,6 +69,31 @@ def power(a,b):
 value=int(input("Enter a number : "))
 power1=int(input("Enter power of a number : "))
 print(power(value,power1))
+print()
+
+#CLASSES AND OBJECTS:-->
+'''
+#Question1:->Get keys corresponding to a value in user defined dictionary.
+'''
+dict1=eval(input("Enter a dictionary : "))
+val=(input("Enter a key whose value you want to print : "))
+for key,value in dict1.items():
+    if (value==val):
+        break;
+print(key)
+print()
+
+'''
+#Question2:->Create a dictionary and store student names and create nested dictionary to store the subject wise marks of every student.Print the marks of a given student from that ductionary for every subject.
+'''
+student={'Chirag':{'maths':50,'physics':60,'chem':90},'Bandita':{'maths':90,'physics':95,'chem':99},'Sakshi':{'maths':100,'physics':99,'chem':100},'Hursh':{'maths':85,'physics':30,'chem':90}}
+k1=input("enter the name of student whose marks you want to see:")
+for key,value in student.items():
+    if k1 == key:
+        print(value)
+print()     
+
+
 
 
 
